@@ -8,10 +8,19 @@ struct Node {
 
 void insert( Node * & head, int data )
 {
-	Node * newNode = new Node;
-	newNode->data = data;
-	newNode->next = head;
-	head = newNode;
+    if(head==NULL){
+        Node * newNode = new Node;
+        newNode->data = data;
+        head = newNode;
+    }else{
+        Node * newNode = new Node;
+        newNode->data = data;
+        Node* x=head;
+        while(x->next!=NULL){
+            x=x->next;
+        }
+        x->next=newNode;
+    }
 }
 
 void printList( Node * head ) {
@@ -47,7 +56,7 @@ void kthfromlast( Node * head,int k ) {
 	    x=x->next;
 	    temp=temp->next;
 	}
-	cout<<"The "<<l<<"th data from last is : "<<curr->data<<"\n";
+	cout<<"The "<<l<<"-th data from last is : "<<curr->data<<"\n";
     }
 }
 
@@ -62,7 +71,9 @@ int main() {
 	insert(head, 4);
 	
 	
+	cout<<"List after Insertion is : ";
 	printList(head);
+	cout<<"\n";
 	kthfromlast(head,1);
 	kthfromlast(head,3);
 	kthfromlast(head,0);
