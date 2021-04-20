@@ -1,4 +1,4 @@
-//main logic
+//main logic leetcode
 
 Node *getIntersectionNode(Node *headA, Node *headB) {
         set<Node*>s;
