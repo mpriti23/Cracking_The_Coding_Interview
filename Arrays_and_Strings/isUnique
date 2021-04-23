@@ -1,3 +1,5 @@
+//Question 1: IsUnique - Given a string. Find if all the characters of string are unique;
+
 #include<bits/stdc++.h>
 using namespace std;
 
