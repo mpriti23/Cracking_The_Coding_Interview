@@ -1,3 +1,5 @@
+//even and odd palindrome
+
 #include <bits/stdc++.h>
 using namespace std;
 
