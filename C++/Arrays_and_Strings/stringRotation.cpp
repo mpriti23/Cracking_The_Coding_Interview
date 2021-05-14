@@ -1,3 +1,5 @@
+//string rotation 
+
 #include <iostream>
 #include <string>
 using namespace std;
