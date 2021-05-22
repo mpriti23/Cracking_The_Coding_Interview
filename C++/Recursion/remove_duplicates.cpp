@@ -3,12 +3,7 @@
 
 // a(abbccddee)
 // abbccddee
-// 
-// 
-// 
-// 
-// e
-// ""
+
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -23,7 +18,6 @@ string duplicates(string s){
         return ros;
     }
     return (ch+ros);
-
 }
 
 int main(){
